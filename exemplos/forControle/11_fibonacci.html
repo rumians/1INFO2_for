@@ -1,0 +1,25 @@
+<script>
+    //PROBLEMA
+    /*
+    Considere a seguinte sequência de números:
+    let fibonacci = [1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89];
+    Pergunte ao usuário quantos números deseja adicionar na sequência de fibonacci.
+    Apresente a lista ao final do programa.
+    */
+
+    //ENTRADA
+    let fibonacci = [1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89];
+    const quantidade = Number(prompt(`Quantos números deseja adicionar na sequência de Fibonacci?`));
+
+    //PROCESSAMENTO
+    for (let contador = 1; contador <= quantidade; contador++) {
+        // let ultimo = fibonacci[fibonacci.length - 1];
+        // let penultimo = fibonacci[fibonacci.length - 2];
+        // let soma = ultimo + penultimo;
+        // fibonacci.push(soma);
+        fibonacci.push(fibonacci[fibonacci.length - 1] + fibonacci[fibonacci.length - 2]);
+    }
+
+    //SAÍDA
+    document.write(fibonacci.join(", "));
+</script>
