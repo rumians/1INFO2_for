@@ -1,4 +1,4 @@
-# Avaliação - Estrutura de Repetição [For...Of] [3º Trimestre]
+# Avaliação - Estrutura de Repetição [For] [3º Trimestre]
 
 ## As provas estão divididas em **Prova A** e **Prova B**.
 
