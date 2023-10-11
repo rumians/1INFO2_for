@@ -8,13 +8,21 @@
     */
 
     //Entrada
-
-
+    let professores = ["Fábio", "Daniel", "Elder", "Heder", "Renilse", "Orlando"];
+    let tecnico = [];
+    let naotecnico = [];
     //Processamento
-
+    for ( const prof of professores) {
+        const pergunta = prompt(`O professor ${prof} é Técnico em Informática ou não?(s / n)`).toLowerCase();
+        if(pergunta == "s") {
+            tecnico.push(prof);
+        } else {
+            naotecnico.push(prof)
+        }
+    }
 
     //Saída
-
+    alert(`Professores da área técnica: ${tecnico.join(", ")}. E os professores da área básica: ${naotecnico}.`)
     /*
     Professores da área técnica: Fábio, Daniel, Orlando.
     Professores da área básica: Elder, Heder, Renilse.

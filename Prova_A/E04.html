@@ -6,13 +6,27 @@
     */
 
     //Entrada
-
-
-    //Processamento
-
+    let mulheres = [];
+    let idadem = 0;
+    let homens = [];
+    let idadeh = 0;
+    //Processamento 
+    for (let i = 1; i <= 7; i++) {
+      let pergunta = prompt(`Qual o seu genero? (Masculino(M) ou do gênero Feminino(F))`).toLowerCase();
+      let idade = Number(prompt(`Qual a sua idade?`));
+      if (pergunta == "f") {
+          mulheres.push(i);
+          idadem += idade;
+      } else if (pergunta == "m") {
+        homens.push(i)
+        idadeh += idade;
+      } else {
+        alert("Algo deu errado :(")
+      }
+    }
 
     //Saída
-
+    alert(`${homens.length} masculinos, Média de idade é ${idadeh / homens.length}. ${mulheres.length} Femininos, Média de idade ${idadem / mulheres.length}`)
     /*
     Considere que serão informados um de cada vez:
     Gênero  | Idade

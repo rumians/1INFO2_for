@@ -8,12 +8,18 @@
 
     //Entrada
 
-
+    let lista = [5, 22, 17, 4, 18, 93];
+    lista.sort((a, b) => b - a);
     //Processamento
-
+    for ( const numero of lista) {
+        if (numero % 2 == 0) {
+            alert(`O numero ${numero} é par`);
+        } else {
+            alert(`O numero ${numero} é impar`);
+        }
+    }
 
     //Saída
-    
 
     /*
     O programa deverá apresentar:

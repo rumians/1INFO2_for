@@ -13,13 +13,33 @@
     */
 
     //Entrada
-
-
+    let can1 = 0;
+    let can2 = 0;
+    let can3 = 0;
+    let can4 = 0;
+    let nulos = 0;
+    let brancos = 0;
+    let pessoas = Number(prompt("Quantas pessoas vao votar?"));
     //Processamento
-
+    for (let i = 1; i <= pessoas; i++) {
+        let votar = Number(prompt("Qual candidato voce ira votar ? (nulo(5) / branco(6))"));
+        if (votar == 1) {
+            can1 += 1;
+        } else if (votar == 2) {
+            can2 += 1;
+        } else if (votar == 3) {
+            can3 += 1;
+        } else if (votar == 4) {
+            can4 += 1;
+        } else if (votar == 5) {
+            nulos += 1;
+        } else if (votar == 6) {
+            brancos += 1;
+        }
+    }
 
     //Saída
-
+    alert(`O 1º candidato teve ${can1} votos(${can1 / pessoas * 100}%). O 2º candidato teve ${can2} votos (${can2 / pessoas * 100}%).O 3º candidato teve ${can3} votos (${can3 / pessoas * 100}%). O 4º candidato teve ${can4} votos (${can4 / pessoas * 100}%). Tivemos o total de ${nulos} votos nulos (${nulos / pessoas * 100}%) e ${brancos} votos brancos (${brancos / pessoas * 100}%)`);
     /*
     Desafio :)
     */
